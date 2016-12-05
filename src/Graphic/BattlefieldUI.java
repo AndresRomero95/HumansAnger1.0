@@ -106,7 +106,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jTextField1.setText("Hp");
         jTextField1.setBorder(null);
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(136, 78, 19, 22);
+        jTextField1.setBounds(136, 78, 17, 22);
         jPanel1.add(jProgressBar1);
         jProgressBar1.setBounds(13, 86, 117, 14);
         jPanel1.add(jProgressBar2);
@@ -123,7 +123,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jTextField2.setText("Stats");
         jTextField2.setBorder(null);
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(13, 21, 59, 59);
+        jTextField2.setBounds(13, 21, 55, 32);
 
         jTextField3.setBackground(java.awt.SystemColor.controlDkShadow);
         jTextField3.setFont(new java.awt.Font("Draggle over kerned BRK", 0, 14)); // NOI18N
@@ -131,7 +131,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jTextField3.setText("Agility");
         jTextField3.setBorder(null);
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(136, 118, 49, 22);
+        jTextField3.setBounds(136, 118, 37, 22);
 
         jTextField4.setBackground(java.awt.SystemColor.controlDkShadow);
         jTextField4.setFont(new java.awt.Font("Draggle over kerned BRK", 0, 14)); // NOI18N
@@ -139,7 +139,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jTextField4.setText("Defense");
         jTextField4.setBorder(null);
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(136, 150, 60, 22);
+        jTextField4.setBounds(136, 150, 53, 22);
 
         jTextField5.setBackground(java.awt.SystemColor.controlDkShadow);
         jTextField5.setFont(new java.awt.Font("Draggle over kerned BRK", 0, 14)); // NOI18N
@@ -147,7 +147,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jTextField5.setText("Damage");
         jTextField5.setBorder(null);
         jPanel1.add(jTextField5);
-        jTextField5.setBounds(136, 196, 56, 22);
+        jTextField5.setBounds(136, 196, 53, 22);
 
         jTextField6.setEditable(false);
         jTextField6.setBackground(java.awt.SystemColor.controlDkShadow);
@@ -156,7 +156,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jTextField6.setText("Actions");
         jTextField6.setBorder(null);
         jPanel1.add(jTextField6);
-        jTextField6.setBounds(13, 298, 72, 59);
+        jTextField6.setBounds(13, 298, 78, 32);
 
         jButton2.setText("Run");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -165,12 +165,12 @@ public class BattlefieldUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(13, 387, 93, 25);
+        jButton2.setBounds(13, 387, 93, 23);
 
         jButton3.setText("Skill");
         jButton3.setComponentPopupMenu(jPopupMenu2);
         jPanel1.add(jButton3);
-        jButton3.setBounds(13, 444, 93, 25);
+        jButton3.setBounds(13, 444, 93, 23);
 
         jButton10.setText("Map");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -179,7 +179,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton10);
-        jButton10.setBounds(13, 502, 93, 25);
+        jButton10.setBounds(13, 502, 93, 23);
 
         jLabel2.setBackground(java.awt.SystemColor.controlDkShadow);
         jLabel2.setOpaque(true);
@@ -193,7 +193,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
         getContentPane().add(jButton4);
-        jButton4.setBounds(540, 250, 120, 138);
+        jButton4.setBounds(540, 250, 120, 137);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/E5.png"))); // NOI18N
         jButton5.setBorderPainted(false);

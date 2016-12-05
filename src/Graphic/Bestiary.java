@@ -73,7 +73,7 @@ public class Bestiary extends javax.swing.JFrame {
         jTextField2.setText("Heroes");
         jTextField2.setBorder(null);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(12, 434, 218, 45);
+        jTextField2.setBounds(12, 434, 218, 24);
 
         jTextField3.setEditable(false);
         jTextField3.setBackground(java.awt.SystemColor.controlDkShadow);
@@ -82,7 +82,7 @@ public class Bestiary extends javax.swing.JFrame {
         jTextField3.setText("Enemies");
         jTextField3.setBorder(null);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(12, 34, 218, 45);
+        jTextField3.setBounds(12, 34, 218, 24);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/E1.png"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -144,7 +144,7 @@ public class Bestiary extends javax.swing.JFrame {
         getContentPane().add(jLabel16);
         jLabel16.setBounds(640, 240, 128, 128);
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/2.png"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/E14.png"))); // NOI18N
         getContentPane().add(jLabel17);
         jLabel17.setBounds(340, 260, 100, 100);
 
@@ -163,7 +163,7 @@ public class Bestiary extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(894, 20, 80, 25);
+        jButton1.setBounds(894, 20, 80, 23);
 
         jLabel15.setBackground(java.awt.SystemColor.controlDkShadow);
         jLabel15.setOpaque(true);

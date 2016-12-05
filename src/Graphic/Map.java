@@ -323,44 +323,103 @@ public class Map extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-//    private void dibujar() {
-//        int[][] mapa = map.getMap();
-//
-//        //pintamos la primera fila
-//        jLabel1.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][0] + ".png")));
-//        jLabel2.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][1] + ".png")));
-//        jLabel3.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][2] + ".png")));
-//        jLabel4.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][3] + ".png")));
-//        jLabel5.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][4] + ".png")));
-//        jLabel6.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][5] + ".png")));
-//        jLabel7.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][6] + ".png")));
-//        jLabel8.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[0][7] + ".png")));
-//        //pintamos la primera fila
-//        jLabel9.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][0] + ".png")));
-//        jLabel10.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][1] + ".png")));
-//        jLabel11.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][2] + ".png")));
-//        jLabel12.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][3] + ".png")));
-//        jLabel13.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][4] + ".png")));
-//        jLabel14.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][5] + ".png")));
-//        jLabel15.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][6] + ".png")));
-//        jLabel16.setIcon(new ImageIcon(getClass().getResource("/recursos/"
-//                + mapa[1][7] + ".png")));
-//    }
+    /**
+     * Este método dibuja cada uno de los labels que se muestran en el frame del
+     * mapa
+     */
+    private void dibujar() {
+
+        int[][] mapa = map.getMap();
+
+//pintamos la primera fila
+        jLabel1.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[0][0] + ".png")));
+        jLabel2.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[0][1] + ".png")));
+        jLabel3.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[0][2] + ".png")));
+        jLabel4.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[0][3] + ".png")));
+        jLabel8.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[0][7] + ".png")));
+//pintamos la segunda fila
+        jLabel12.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[1][3] + ".png")));
+        jLabel13.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[1][4] + ".png")));
+        jLabel14.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[1][5] + ".png")));
+        jLabel15.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[1][6] + ".png")));
+        jLabel16.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[1][7] + ".png")));
+//pintamos la tercera fila
+        jLabel17.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[2][0] + ".png")));
+        jLabel18.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[2][1] + ".png")));
+        jLabel19.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[2][2] + ".png")));
+        jLabel23.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[2][6] + ".png")));
+//pintamos la cuarta fila
+        jLabel25.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[3][0] + ".png")));
+        jLabel27.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[3][2] + ".png")));
+        jLabel28.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[3][3] + ".png")));
+        jLabel29.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[3][4] + ".png")));
+        jLabel30.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[3][5] + ".png")));
+        jLabel31.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[3][6] + ".png")));
+//pintamos la quinta fila
+        jLabel33.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[4][0] + ".png")));
+        jLabel34.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[4][1] + ".png")));
+//pintamos la sexta fila
+        jLabel42.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][1] + ".png")));
+        jLabel43.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][2] + ".png")));
+        jLabel44.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][3] + ".png")));
+        jLabel45.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][4] + ".png")));
+        jLabel46.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][5] + ".png")));
+        jLabel47.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][6] + ".png")));
+        jLabel48.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[5][7] + ".png")));
+//pintamos la septima fila
+        jLabel49.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[6][0] + ".png")));
+        jLabel51.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[6][2] + ".png")));
+        jLabel56.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[6][7] + ".png")));
+//pintamos la octava fila
+        jLabel57.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][0] + ".png")));
+        jLabel58.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][1] + ".png")));
+        jLabel59.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][2] + ".png")));
+        jLabel60.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][3] + ".png")));
+        jLabel61.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][4] + ".png")));
+        jLabel62.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][5] + ".png")));
+        jLabel63.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][6] + ".png")));
+        jLabel64.setIcon(new ImageIcon(getClass().getResource("/Resources/"
+                + mapa[7][7] + ".png")));
+    }
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         // TODO add your handling code here:
@@ -368,32 +427,28 @@ public class Map extends javax.swing.JFrame {
         switch (evt.getKeyCode()) {
 
             case KeyEvent.VK_RIGHT:
-                System.out.println("Right's been pressed");
+                //System.out.println("Right's been pressed");
                 map.moveRight();
-                map.verificar();
-                map.getMap();
-                //dibujar();
+                dibujar();
+                //map.verificar();
                 break;
             case KeyEvent.VK_LEFT:
-                System.out.println("Left's been pressed");
+                //System.out.println("Left's been pressed");
                 map.moveLeft();
-                map.verificar();
-                map.getMap();
-                //dibujar();
+                dibujar();
+                //map.verificar();
                 break;
             case KeyEvent.VK_DOWN:
-                System.out.println("Down's been pressed");
+                //System.out.println("Down's been pressed");
                 map.moveDown();
-                map.verificar();
-                map.getMap();
-                //dibujar();
+                dibujar();
+                //map.verificar();
                 break;
             case KeyEvent.VK_UP:
-                System.out.println("Up's been pressed");
+                //System.out.println("Up's been pressed");
                 map.moveUp();
-                map.verificar();
-                map.getMap();
-                //dibujar();
+                dibujar();
+                //map.verificar();
                 break;
             default:
                 break;
