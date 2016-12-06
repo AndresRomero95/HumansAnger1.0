@@ -12,7 +12,7 @@ package Logic;
  * @version 0.2 *
  */
 public class BattleField {
-
+    private int turno = 0;
     Character heroes[] = new Character[3];
     private Character[] enemigos;
     Character heroe0 = new Character("Robot 0", 46, 33, 32, 54);
@@ -27,7 +27,7 @@ public class BattleField {
      * @param heroe2 heroe healer
      */
     public void Batalla(Character heroe0, Character heroe1, Character heroe2) {
-  
+      
         heroe0 = heroes[0];
         heroe1 = heroes[1];
         heroe2 = heroes[2];
@@ -39,8 +39,16 @@ public class BattleField {
 
         }
         //3876532 Pedro libros
-
-
+        
+        
+        while (saludTotal(heroes)>0 || saludTotal(enemigos)>0)
+            while (turno > 1) {
+            atacar(enemigos[0], heroe0);
+            atacar(enemigos[1], heroe1);
+            atacar(enemigos[2], heroe2);
+            turno = 0;
+            //Mientras el turno sea = 1 atacan los enemigos, pero si el turno es 0 atacan heroes
+            }
     }
 
     /**
@@ -111,6 +119,9 @@ public class BattleField {
      */
     public void atacar(Character heroe, Character enemigo) {
         enemigo.setCurrentHp(enemigo.getCurrentHp() - (Math.abs(enemigo.getDef() - heroe.getDmg())));
+        turno++;
+            
+        
 
     }
 
