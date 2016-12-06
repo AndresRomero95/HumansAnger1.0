@@ -2,6 +2,8 @@ package Graphic;
 
 import javax.swing.ImageIcon;
 import Logic.BattleField;
+import Logic.Character;
+import Logic.Bestiary;
 
 
 /*
@@ -18,13 +20,17 @@ public class BattlefieldUI extends javax.swing.JFrame {
     /**
      * Creates new form BattlefieldUI
      */
+    BattleField battlefield1 = new BattleField();
+    Character heroe0 = new Character("Robot 0", 46, 33, 32, 54);
+    Character heroe1 = new Character ("Robot 1", 46, 33, 32, 54);
+    Character heroe2 = new Character("Robot 2", 46, 33, 32, 54);
+    Bestiary bestias = new Bestiary();
     
-    BattleField battlefield1=new BattleField();
-    
+
     public BattlefieldUI() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/Resources/Battle.png")).getImage());
-        
+
         jButton1.setVisible(false);
         jButton11.setVisible(false);
         jButton12.setVisible(false);
@@ -34,8 +40,7 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jButton14.setVisible(false);
         jButton15.setVisible(false);
         jButton16.setVisible(false);
-               
-                
+
     }
 
     /**
@@ -118,7 +123,6 @@ public class BattlefieldUI extends javax.swing.JFrame {
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jInternalFrame2 = new javax.swing.JInternalFrame();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -423,10 +427,6 @@ public class BattlefieldUI extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(1080, 0, 210, 720);
 
-        jInternalFrame2.setVisible(true);
-        getContentPane().add(jInternalFrame2);
-        jInternalFrame2.setBounds(670, 260, 230, 130);
-
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/R3.png"))); // NOI18N
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
@@ -543,62 +543,62 @@ public class BattlefieldUI extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-       // battlefield1.atacar(heroe0, enemigo0);
+       battlefield1.atacar(heroe0,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe0, enemigo1);
+          battlefield1.atacar(heroe0,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe0, enemigo2);
+          battlefield1.atacar(heroe0,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem28ActionPerformed
         // TODO add your handling code here:
-       //battlefield1.atacar(heroe0, enemigo3);
+        battlefield1.atacar(heroe1,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem28ActionPerformed
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe1, enemigo0);
+       battlefield1.atacar(heroe1,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe1, enemigo1);
+         battlefield1.atacar(heroe1,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
         // TODO add your handling code here:
-       //battlefield1.atacar(heroe1, enemigo2);
+          battlefield1.atacar(heroe2,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 
     private void jMenuItem31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem31ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe1, enemigo3);
+         battlefield1.atacar(heroe2,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem31ActionPerformed
 
     private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe2, enemigo0);
+         battlefield1.atacar(heroe2,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem19ActionPerformed
 
     private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe2, enemigo1);
+         // battlefield1.atacar(heroe0,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem20ActionPerformed
 
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
         // TODO add your handling code here:
-        //battlefield1.atacar(heroe2, enemigo2);
+         // battlefield1.atacar(heroe0,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     private void jMenuItem34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem34ActionPerformed
         // TODO add your handling code here:
-       //battlefield1.atacar(heroe2, enemigo3);
+        //battlefield1.atacar(heroe0,bestias.generateEnemy());
     }//GEN-LAST:event_jMenuItem34ActionPerformed
 
     /**
@@ -655,7 +655,6 @@ public class BattlefieldUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

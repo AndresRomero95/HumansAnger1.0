@@ -15,9 +15,7 @@ public class BattleField {
     private int turno = 0;
     Character heroes[] = new Character[3];
     private Character[] enemigos;
-    Character heroe0 = new Character("Robot 0", 46, 33, 32, 54);
-    Character heroe1 = new Character("Robot 1", 46, 33, 32, 54);
-    Character heroe2 = new Character("Robot 2", 46, 33, 32, 54);
+   
 
     /**
      * *

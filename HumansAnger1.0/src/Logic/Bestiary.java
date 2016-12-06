@@ -13,8 +13,8 @@ package Logic;
  */
 public class Bestiary {
 
-    private final Character enemigos[] = new Character[15];
-    private final Character heroes[] = new Character[2];
+    private final Character enemigos[] = new Character[16];
+    private final Character heroes[] = new Character[3];
 
     public Bestiary() {
 
